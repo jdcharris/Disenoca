@@ -1,0 +1,19 @@
+{
+  "name": "server_files",
+  "version": "1.0.0",
+  "description": "Servidor de diseño Electrónico",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "CAE soluciones",
+  "license": "ISC",
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2",
+    "mysql": "^2.18.1",
+    "sqlite3": "^4.1.0"
+  }
+}
