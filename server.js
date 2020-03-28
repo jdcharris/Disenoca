@@ -3,10 +3,10 @@
 var mysql = require('mysql');
 var latitud, longitud, fecha, hora, mensaje;
 var con = mysql.createConnection({
-    host: "design.ck9qlt1qutiu.us-east-1.rds.amazonaws.com",
-    user: "dark",
-    password: "mr01121998",
-    database: 'design'
+    host: "",
+    user: "",
+    password: "",
+    database: ''
 });
 
 //Udp conection
