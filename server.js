@@ -3,16 +3,16 @@
 var mysql = require('mysql');
 var latitud, longitud, fecha, hora, mensaje;
 var con = mysql.createConnection({
-    host: "",
-    user: "",
-    password: "",
-    database: ''
+    host: "design.ck9qlt1qutiu.us-east-1.rds.amazonaws.com",
+    user: "julian",
+    password: "milena11+",
+    database: 'syrusdatabase'
 });
 
 //Udp conection
 const dgram = require('dgram');
 const UDP_PORT = '53000';
-const IP_ADRESS = '192.168.0.10';
+const IP_ADRESS = '172.31.86.12';
 const server = dgram.createSocket('udp4');
 server.on('error', (err) => {
     console.log(`server error:\n${err.stack}`);
@@ -73,7 +73,7 @@ app.get('/tr', (req, res) => {
     }
 });
 
-app.get('/Appdata');
+
 
 app.listen(TCP_PORT, function() {
     console.log('Server started at port ' + TCP_PORT.toString());
